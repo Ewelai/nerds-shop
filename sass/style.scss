@@ -1,9 +1,14 @@
-// Layout configuration
-@import 'grid';
-
 // Helpers
 @import 'helpers/variables';
+@import 'helpers/mixins';
 
-// Blocks
+// Layout configuration
+@import 'base/grid';
+@import 'base/interface';
+
+// Sections
 @import 'sections/header';
 @import 'sections/navbar';
+@import 'sections/slider';
+@import 'sections/features';
+@import 'sections/about';

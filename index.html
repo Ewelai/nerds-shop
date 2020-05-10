@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <title>Nerds Shop</title>
@@ -10,30 +11,166 @@
 <body>
   <main class="container">
     <header class="header">
-      <nav class="nav">
-        <div class="nav-logo">
-          <img src="./image/nerds-logo.png" alt="logo">
-        </div>
-
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Студия</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Клиенты</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Магазин</a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">Контакты</a>
-          </li>
-          <li class="nav-list__item--basket">
-            <a href="#" class="nav-list__link nav-list__link--basket">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper">
+        <nav class="nav">
+          <div class="nav-logo">
+            <img src="./image/nerds-logo.png" alt="logo">
+          </div>
+  
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Студия</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Клиенты</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Магазин</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">Контакты</a>
+            </li>
+            <li class="nav-list__item--basket">
+              <a href="#" class="nav-list__link nav-list__link--basket">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <section class="slider">
+          <div class="slider-container">
+            <input type="radio" name="r" class="slide-btn slide-btn--first" id="btn-first" checked>
+            <label for="btn-first" class="label-btn label-btn--first"></label>
+            <input type="radio" name="r" class="slide-btn slide-btn--second" id="btn-second">
+            <label for="btn-second" class="label-btn label-btn--second"></label>
+            <input type="radio" name="r" class="slide-btn slide-btn--third" id="btn-third">
+            <label for="btn-third" class="label-btn label-btn--third"></label>
+  
+            <div class="slider-container__item slider-container__item--first">
+              <div class="slider-content">
+                <p class="slider-content__header">
+                  Долго, дорого, 
+                  скрупулезно.
+                </p>
+                <p class="slider-content__text">
+                  Математически выверенный дизайн 
+                  для вашего сайта или мобильного приложения.
+                </p>
+                <button class="slider-content__button">Узнать больше</button>
+              </div>
+            </div>
+            <div class="slider-container__item slider-container__item--second">
+              <div class="slider-content">
+                <p class="slider-content__header">
+                  Любим математику
+                  как никто другой
+                </p>
+                <p class="slider-content__text">
+                  Никакого креатива, только математические формулы 
+                  для расчета идеальных пропорций.
+                </p>
+                <button class="slider-content__button">Узнать больше</button>
+              </div>
+            </div>
+            <div class="slider-container__item slider-container__item--third">
+              <div class="slider-content">
+                <p class="slider-content__header">
+                  Только ночь,
+                  только хардкор
+                </p>
+                <p class="slider-content__text">
+                  Работать днем, как все? Мы против этого.
+                  Ближе к полуночи работа только начинается.
+                </p>
+                <button class="slider-content__button">Узнать больше</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </header>
+
+    <section>
+      <div class="wrapper">
+        <div class="features">
+          <ul class="features-list">
+            <li class="features-list__item">
+              <img src="./image/illustration-1.jpg.png" alt="illustration">
+              <h4 class="features-list__header">Веб-сайты</h4>
+              <p class="features-list__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="features-list__btn features-list__btn--red">Заказать</button>
+            </li>
+            <li class="features-list__item">
+              <img src="./image/illustration-2.jpg.png" alt="illustration">
+              <h4 class="features-list__header">Веб-сайты</h4>
+              <p class="features-list__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="features-list__btn features-list__btn--green">Заказать</button>
+            </li>
+            <li class="features-list__item">
+              <img src="./image/illustration-3.jpg.png" alt="illustration">
+              <h4 class="features-list__header">Веб-сайты</h4>
+              <p class="features-list__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <button class="features-list__btn features-list__btn--yellow">Заказать</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrapper">
+        <div class="border"></div>
+        <div class="about-container">
+          <section class="about-container__info">
+            <h2 class="about-container__info--header">
+              Мы — маленькая, но гордая
+              дизайн-студия из Краснодара.
+            </h2>
+            <span class="about-container__info--text">
+              Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+              превыше креатива. Работаем не покладая рук, как роботы.
+            </span>
+
+            <div class="about-container__orders">
+              <h5 class="about-container__orders--header">Выполняем заказы на разработку:</h5>
+              <ul class="about-container__list">
+                <li class="about-container__list--item">Веб-сайтов любой сложности</li>
+                <li class="about-container__list--item">Мобильных приложений для iOS и Android</li>
+                <li class="about-container__list--item">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
+          </section>
+          <section class="about-container__statistic">
+            <img src="./image/nerds-illustration.jpg.png" alt="nerds-illustration">
+            <h4 class="about-container__statistic--header">с 2004 года Любим точность во всем:</h4>
+
+            <div class="about-container__statistic--info">
+              <article class="about-container__statistic--article">
+                <p class="about-container__statistic--text">146%</p>
+                <span class="about-container__statistic--subtext">
+                  Уровень
+                  самоотдачи
+                </span>
+              </article>
+              <article>
+                <p>100%</p>
+                <span>
+                  Соблюдение 
+                  сроков
+                </span>
+              </article>
+              <article>
+                <p>50%</p>
+                <span>
+                  Минимальная
+                  предоплата
+                </span>
+              </article>
+            </div>
+          </section>
+        </div>
+        <div class="border"></div>
+      </div>
+    </section>
   </main>
 </body>
 </html>

@@ -1,10 +1,9 @@
 .nav {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  justify-content: space-between;
+  padding-top: 50px;
 
   &-logo {
-    width: 25%;
 
     &:hover {
       opacity: 0.8;
@@ -16,7 +15,7 @@
   }
 
   &-list {
-    width: 55%;
+    width: 70%;
     display: flex;
     align-items: center;
 
@@ -35,7 +34,7 @@
 
     &__link {
       text-decoration: none;
-      color: $link-stable;
+      color: $black;
       font-family: Roboto;
       font-size: 16px;
       line-height: 30px;
